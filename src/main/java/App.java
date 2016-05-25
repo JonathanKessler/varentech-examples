@@ -14,5 +14,9 @@ public class App {
         mdi.createMusicTable();
         Music music = new Music();
         mdi.insert(music);
+
+        //TODO: Update the db by organizing it by year.
+        mdi.sortYearsAsc(music);
+
     }
 }

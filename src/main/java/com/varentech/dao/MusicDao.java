@@ -13,6 +13,8 @@ public interface MusicDao {
     Music selectById(int id);
 
     List<Music> selectAll();
+    List<Music> sortYearsAsc(Music music);
+
     void delete(int id);
     void update(Music music, int id);
 }
