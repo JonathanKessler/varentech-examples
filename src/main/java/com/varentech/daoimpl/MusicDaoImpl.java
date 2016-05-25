@@ -52,7 +52,25 @@ public class MusicDaoImpl implements MusicDao {
     }
 
     public void insert(Music music) {
+        //TODO: Add a few insert SQL statements.
+        Connection connection = null;
+        Statement statement = null;
 
+        try{
+            connection = ConnectionConfiguration.getConnection();
+            statement = connection.createStatement();
+            //TODO: Add Insert statements here.
+            statement.execute("INSERT INTO MUSIC(ID, ARTIST_NAME, ALBUM_NAME, YEAR) " +
+                            "VALUES (1, 'Drake', 'Take Care', 2011)"
+            );
+            statement.execute("INSERT INTO MUSIC(ID, ARTIST_NAME, ALBUM_NAME, YEAR)" +
+                            "VALUES (2, 'Sonic Youth', 'Daydream Nation', 1989)"
+            );
+
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
     }
 
     public Music selectById(int id) {
@@ -64,7 +82,6 @@ public class MusicDaoImpl implements MusicDao {
     }
 
     public void delete(int id) {
-
     }
 
     public void update(Music music, int id) {
