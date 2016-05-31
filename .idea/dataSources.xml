@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="220867721">
-    <data-source source="LOCAL" name="Local Data Source" uuid="4183e5c5-a221-4496-b9ba-afb44800ca76">
+  <component name="DataSourceManagerImpl" format="xml" hash="720516265">
+    <data-source source="LOCAL" name="Thunder.db" uuid="b1ae1768-82da-443b-ad52-1f2cbe9c2383">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/TEST.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/Thunder.db</jdbc-url>
     </data-source>
   </component>
 </project>
