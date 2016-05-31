@@ -1,4 +1,4 @@
-package com.varentech.util;
+package com.varentech.deploya_examples.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -13,8 +13,7 @@ public class ConnectionConfiguration {
 
         try{
             Class.forName("org.sqlite.JDBC");
-            connection = DriverManager.getConnection("jdbc:sqlite:TEST.db");
-            System.out.println("Connection successful!");
+            connection = DriverManager.getConnection("jdbc:sqlite:Thunder.db");
         }
         catch (Exception e){
             e.printStackTrace();
