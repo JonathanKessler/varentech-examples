@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="220867721">
-    <data-source source="LOCAL" name="Local Data Source" uuid="4183e5c5-a221-4496-b9ba-afb44800ca76">
+  <component name="DataSourceManagerImpl" format="xml" hash="3803890679">
+    <data-source source="LOCAL" name="Thunder" uuid="f649f4e1-3113-436a-8dc8-cdd1e9d95403">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>SQLite</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/TEST.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Users\parksw\IdeaProjects\varentech-examples\Thunder.db</jdbc-url>
+      <libraries>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/xerial-sqlite-license.txt</url>
+        </library>
+        <library>
+          <url>file://$APPLICATION_CONFIG_DIR$/jdbc-drivers/sqlite-jdbc-3.8.11.2.jar</url>
+        </library>
+      </libraries>
     </data-source>
   </component>
 </project>
