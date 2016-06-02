@@ -19,6 +19,13 @@ public class Resource {
         return "Hello, " + name;
 
     }
+    @GET
+    @Path("hello")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String helloWorld(){
+        return "Hello, world!";
+    }
+
 
     @POST
     @Path("post")

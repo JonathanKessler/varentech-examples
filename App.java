@@ -18,14 +18,15 @@ public class App
     public static void main( String[] args )
     {
 
-        System.out.println( "Hello World!" );
+
         ResourceConfig config = new ResourceConfig();
         config.packages("jettyjerseytutorial");
         ServletHolder servlet;
         servlet = new ServletHolder(new ServletContainer(config));
 
         Server server = new Server(2222);
-        ServletContextHandler context = new ServletContextHandler(server, "/*");
+        ServletContextHandler context;
+        context = new ServletContextHandler(server, "/*");
         context.addServlet(servlet,"/*");
 
         try{
